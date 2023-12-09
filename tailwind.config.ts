@@ -24,8 +24,8 @@ const config: Config = {
         white: '#FFFFFF',
       },
       fontFamily: {
-        sans: ['Oswald', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
+        sans: ['Roboto', 'sans-serif'],
+        serif: ['Noto Serif', 'serif'],
       },
     },
   },
