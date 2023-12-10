@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className="absolute top-0 left-0 w-full h-20 z-10 text-grayLight flex justify-between items-center px-10">
       <div className="text-3xl font-[700] tracking-wider uppercase">
-        <h1>RedMill</h1>
+        <h1><span className="text-brownLight">The</span>RedMill</h1>
       </div>
       <nav className="text-lg font-[400] tracking-wider font-serif italic">
         <ul className="flex">
