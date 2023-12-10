@@ -3,7 +3,7 @@ import Image from 'next/image';
 function Services() {
   return (
     <section id="services" className="relative w-full max-w-[1600px] h-full flex flex-col justify-start items-center gap-5 mx-auto my-20 px-10">
-      <p className="text-xl text-brownLight font-serif italic tracking-wider font-[500]">Οι Παροχές μας</p>
+      <p className="text-xl text-brownLight font-serif italic tracking-wider font-[500]">Οι παροχές μας</p>
       <h1 className="text-4xl font-[600] uppercase">Απολαυστε τον καφε σας</h1>
       <p className="text-lg text-brownLight font-serif italic tracking-wider font-[500] -mt-3">όπως εσείς τον θέλετε!</p>
       <div className="w-full max-w-[150px] h-[2px] mt-2 bg-brownLight opacity-50" />

@@ -19,8 +19,7 @@ function Navbar() {
       </div>
       <nav className="text-lg font-[400] tracking-wider font-serif italic">
         <ul className="flex">
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'home') }>Αρχική</li>
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'services') }>Οι Παροχές μας</li>
+          <li className={ liClasses } onClick={ (e) => handleClick(e, 'services') }>Οι παροχές μας</li>
           <li className={ liClasses } onClick={ (e) => handleClick(e, 'shop') }>Το κατάστημα μας</li>
           <li className={ liClasses } onClick={ (e) => handleClick(e, 'process') }>Η διαδικασία</li>
           <li className={ liClasses } onClick={ (e) => handleClick(e, 'priceList') }>Τιμοκατάλογος</li>
