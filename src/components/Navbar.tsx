@@ -6,7 +6,10 @@ function Navbar() {
 
   const handleClick = (event: SyntheticEvent, id: string) => {
     event.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
   };
 
   return (
