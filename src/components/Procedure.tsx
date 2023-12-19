@@ -23,7 +23,7 @@ function Procedure() {
             className="h-[350px] w-full object-cover rounded-md shadow-md" />
           <div className="w-full flex justify-start items-center gap-5">
             <h1 className="text-5xl font-[600] font-serif italic text-brownLight">02</h1>
-            <p className="text-xl text-center font-serif tracking-wider font-[700]">Καβουρδισμα</p>
+            <p className="text-xl text-center font-serif tracking-wider font-[700]">Καβούρδισμα</p>
           </div>
           <p className="w-full text-lg font-serif tracking-wider font-[400]">Οι κόκκοι του καφέ ψήνονται για να αναπτύξουν τη γεύση τους. Τα επίπεδα καβουρδίσματος μπορούν να
             κυμαίνονται από ανοιχτό έως σκούρο, με κάθε ένα να προσδίδει διαφορετική γεύση.</p>
