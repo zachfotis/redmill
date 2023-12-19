@@ -2,6 +2,8 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Services from '@/components/Services';
 import Shop from '@/components/Shop';
+import Procedure from '@/components/Procedure';
+import BestCoffee from '@/components/BestCoffee';
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
       <Hero />
       <Services />
       <Shop />
+      <Procedure />
+      <BestCoffee />
+      <Procedure />
     </main>
   );
 }
