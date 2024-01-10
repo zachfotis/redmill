@@ -4,6 +4,7 @@ import Services from '@/components/Services';
 import Shop from '@/components/Shop';
 import Procedure from '@/components/Procedure';
 import BestCoffee from '@/components/BestCoffee';
+import Menu from '@/components/Menu';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <Shop />
       <Procedure />
       <BestCoffee />
-      <Procedure />
+      <Menu />
     </main>
   );
 }
