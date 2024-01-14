@@ -8,7 +8,7 @@ import PaperSeparator from '@/components/PaperSeparator';
 function BestCoffee() {
   return (
     <section className="relative w-full h-[800px] text-grayLight overflow-hidden">
-      <div className="w-full absolute top-0 left-0 z-10 rotate-180">
+      <div className="w-full absolute -top-1 left-0 z-10 rotate-180">
         <PaperSeparator />
       </div>
       <Parallax
@@ -32,7 +32,7 @@ function BestCoffee() {
       </div>
       {/* Black overlay */ }
       <div className="w-full h-[800px] absolute top-0 left-0 z-0 bg-black opacity-50" />
-      <div className="w-full absolute bottom-0 left-0 z-10">
+      <div className="w-full absolute -bottom-1 left-0 z-10">
         <PaperSeparator />
       </div>
     </section>

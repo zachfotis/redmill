@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative w-full h-[900px] text-grayLight overflow-hidden">
-      <div className="w-full absolute top-0 left-0 z-10 rotate-180">
+      <div className="w-full absolute -top-1 left-0 z-10 rotate-180">
         <PaperSeparator />
       </div>
       <Parallax
