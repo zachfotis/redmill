@@ -1,9 +1,18 @@
 'use server';
 
-export const submitForm = (data: FormData) => {
-  const name = data.get('name');
-  const email = data.get('email');
-  const message = data.get('message');
+import { EmailData } from '../../typings';
+import { sendEmail } from '@/serverActions/MailActions';
 
-  console.log(name, email, message);
+export const submitForm = async (data: FormData) => {
+  const name = data.get('name') as string;
+  const email = data.get('email') as string;
+  const message = data.get('message') as string;
+
+  const emailData: EmailData = {
+    name,
+    email,
+    message,
+  };
+
+  await sendEmail(emailData);
 };
