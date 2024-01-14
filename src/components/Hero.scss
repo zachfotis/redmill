@@ -1,20 +1,24 @@
 .spring-image {
-  animation: springScale 2s ease-in-out;
+  animation: springScale 2s ease-in-out forwards;
   animation-delay: 0.5s;
 }
 
 
 @keyframes springScale {
   0% {
+    rotate: 0deg;
     transform: scale(1);
   }
   33% {
+    rotate: 4deg;
     transform: scale(1.7);
   }
   66% {
+    rotate: 6deg;
     transform: scale(0.7);
   }
   100% {
     transform: scale(1);
+    rotate: 8deg;
   }
 }

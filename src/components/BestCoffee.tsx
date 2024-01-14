@@ -12,9 +12,9 @@ function BestCoffee() {
         <PaperSeparator />
       </div>
       <Parallax bgImage={ HeroImage.src } bgImageAlt="hero image" bgImageStyle={ { objectFit: 'cover' } } strength={ 700 } className="w-full h-full" />
-      <div className="absolute top-0 left-0 z-20 w-full h-[800px] flex justify-center items-stretch gap-10">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-20 w-full max-w-[1600px] h-[800px] flex justify-center items-stretch gap-10">
         <div className="flex-1 flex flex-col justify-center items-center gap-10">
-          <Image src="/images/logo-test.png" alt="logo" width={ 350 } height={ 350 } className="-rotate-12" />
+          <Image src="/images/logo.png" alt="logo" width={ 400 } height={ 400 } className="rotate-[8deg]" />
         </div>
         <div className="flex-1 flex flex-col justify-center items-start gap-5">
           <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">Δέσμευση ποιότητας</h1>
