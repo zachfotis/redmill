@@ -11,7 +11,7 @@ function Map({ showHeader = true }: { showHeader?: boolean }) {
   const position: [number, number] = [40.8450697738782, 24.3065083112725];
 
   return (
-    <MapContainer center={ position } zoom={ 14 } scrollWheelZoom={ false } style={ { width: '100%', height: '100%' } }>
+    <MapContainer center={ position } zoom={ 14 } scrollWheelZoom={ false } style={ { width: '100%', height: '100%', zIndex: 0 } }>
       <TileLayer
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
