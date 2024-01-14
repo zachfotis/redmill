@@ -52,7 +52,8 @@ function Menu() {
     { itemName: 'Espresso Nicaragua', itemPrice: '30,00' },
   ];
   return (
-    <section id="menu" className="relative w-full max-w-[1600px] h-full flex flex-col justify-start items-center gap-5 mx-auto my-20 px-10">
+    <section id="menu" className="relative w-full h-full flex flex-col justify-start items-center gap-5 mx-auto my-20 px-10">
+      <Image src="/images/beans.png" alt="beans" width={ 300 } height={ 900 } className="absolute w-full h-full top-0 left-0 -z-20 opacity-5" />
       <p className="text-xl text-brownLight font-serif italic tracking-wider font-[500]">Τιμοκατάλογος</p>
       <h1 className="text-4xl font-[600] uppercase">Εξερευνηστε τα προϊοντα μας</h1>
       <div className="w-full max-w-[150px] h-[2px] mt-2 bg-brownLight opacity-50" />
@@ -66,11 +67,11 @@ function Menu() {
           Καφεκοπτείο
         </button>
       </div>
-      <div className="w-full mt-7 grid grid-cols-2 gap-x-20 gap-y-7 p-7">
+      <div className="w-full max-w-[1600px] mt-7 grid grid-cols-2 gap-x-20 gap-y-7 p-7">
         { activeMenu === 'coffee' && drinkMenuItems.map((item, index) => <MenuItem key={ index } itemName={ item.itemName } itemPrice={ item.itemPrice } />) }
         { activeMenu === 'drinks' && coffeeMenuItems.map((item, index) => <MenuItem key={ index } itemName={ item.itemName } itemPrice={ item.itemPrice } perKilo />) }
       </div>
-      <div className="absolute bottom-0 -right-10 -z-10 opacity-10">
+      <div className="absolute bottom-0 right-[10%] -z-10 opacity-10">
         { activeMenu === 'coffee' && <Image src="/images/coffee-cup.png" alt="store" width={ 300 } height={ 900 } className="object-cover" /> }
         { activeMenu === 'drinks' && <Image src="/images/coffee-bag.png" alt="store" width={ 300 } height={ 900 } /> }
       </div>

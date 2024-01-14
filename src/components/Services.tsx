@@ -7,12 +7,13 @@ import { FaAccessibleIcon } from 'react-icons/fa6';
 
 function Services() {
   return (
-    <section id="services" className="relative w-full max-w-[1600px] h-full flex flex-col justify-start items-center gap-5 mx-auto my-20 px-10">
+    <section id="services" className="relative w-full h-full flex flex-col justify-start items-center gap-5 mx-auto my-20 px-10">
+      <Image src="/images/beans.png" alt="beans" width={ 300 } height={ 900 } className="absolute w-full h-full top-0 left-0 -z-10 opacity-5" />
       <p className="text-xl text-brownLight font-serif italic tracking-wider font-[500]">Οι παροχές μας</p>
       <h1 className="text-4xl font-[600] uppercase">Απολαυστε τον καφε σας</h1>
       <p className="text-lg text-brownLight font-serif italic tracking-wider font-[500] -mt-3">όπως εσείς τον θέλετε!</p>
       <div className="w-full max-w-[150px] h-[2px] mt-2 bg-brownLight opacity-50" />
-      <div className="w-full mt-14 grid grid-cols-[1fr_auto_1fr] gap-20">
+      <div className="w-full max-w-[1600px] mt-14 grid grid-cols-[1fr_auto_1fr] gap-20">
         <div className="grid grid-cols-[1fr_100px] gap-10">
           <div className="w-full flex flex-col justify-start items-end gap-2">
             <h1 className="text-xl font-[600] uppercase">Take away</h1>
