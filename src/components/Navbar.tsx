@@ -8,7 +8,7 @@ function Navbar() {
     event.preventDefault();
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
-      block: 'center',
+      block: 'start',
     });
   };
 
