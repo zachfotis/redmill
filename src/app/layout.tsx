@@ -6,7 +6,7 @@ import GoToTop from '@/components/GoToTop';
 
 export const metadata: Metadata = {
   title: 'The Red Mill',
-  description: 'The Red Mill is a coffee shop in Kavala, Greece.',
+  description: 'The Red Mill is a coffee shop in Peramos, Kavala, Greece. We produce and serve the best coffee in town.',
 };
 
 export default function RootLayout({

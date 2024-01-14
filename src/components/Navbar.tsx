@@ -13,12 +13,13 @@ function Navbar() {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full h-20 z-30 text-grayLight bg-black bg-opacity-50 flex justify-between items-center px-10">
-      <div className="text-4xl font-[700] tracking-wider uppercase">
+    <nav
+      className="absolute top-0 left-0 w-full z-30 text-grayLight bg-black bg-opacity-50 flex flex-col md:flex-row justify-between items-center gap-2 px-10 py-2 overflow-hidden">
+      <div className="text-2xl lg:text-4xl font-[700] tracking-wider uppercase">
         <h1><span className="text-brownLight">The</span>RedMill</h1>
       </div>
-      <div className="text-md text-grayLight uppercase font-[400] tracking-wider">
-        <ul className="flex">
+      <div className="text-sm lg:text-base text-grayLight uppercase font-[400] md:tracking-wider whitespace-nowrap">
+        <ul className="flex flex-wrap justify-center">
           <li className={ liClasses } onClick={ (e) => handleClick(e, 'services') }>Οι παροχες μας</li>
           {/*<li className={ liClasses } onClick={ (e) => handleClick(e, 'shop') }>Το καταστημα μας</li>*/ }
           <li className={ liClasses } onClick={ (e) => handleClick(e, 'process') }>Η διαδικασια</li>

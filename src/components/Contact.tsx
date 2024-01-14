@@ -13,19 +13,23 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState('');
 
   return (
-    <section style={ {
-      objectPosition: 'center top',
-    } } id="contact" className="relative w-full h-[900px] text-grayLight">
+    <section id="contact" className="relative w-full h-[900px] text-grayLight overflow-hidden">
       <div className="w-full absolute top-0 left-0 z-10 rotate-180">
         <PaperSeparator />
       </div>
-      <Parallax bgImage={ HeroImage.src } bgImageAlt="hero image" bgImageStyle={ {
-        objectFit: 'cover',
-      } } strength={ 500 } className="w-full h-full" />
+      <Parallax
+        bgImage={ HeroImage.src }
+        bgImageAlt="hero image"
+        bgImageStyle={ {
+          height: '1100px',
+          objectFit: 'cover',
+        } }
+        strength={ 500 }
+        className="w-full h-[900px]" />
       <div className="absolute top-0 left-0 z-20 w-full h-[900px] flex justify-center items-stretch gap-10">
         <div className="flex flex-col justify-center items-start gap-5">
-          <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">Φόρμα Επικοινωνίας</h1>
-          <h1 className="text-5xl font-[500] tracking-wider uppercase">Επικοινωνηστε μαζι μας</h1>
+          <h1 className="w-full lg:w-auto text-lg lg:text-xl text-center lg:text-left text-accent font-serif italic tracking-wider font-[500]">Φόρμα Επικοινωνίας</h1>
+          <h1 className="w-full lg:w-auto text-3xl lg:text-5xl text-center lg:text-left font-[500] tracking-wider uppercase">Επικοινωνηστε μαζι μας</h1>
           <div className="w-full h-[2px] mt-2 bg-accent opacity-50" />
           <form
             action={ async (formData: FormData) => {
@@ -39,8 +43,8 @@ export default function Contact() {
                 setIsSubmitted('false');
               }
             } }
-            className="w-full flex flex-col gap-10 mt-3">
-            <div className="flex justify-between items-center gap-5">
+            className="w-full flex flex-col gap-10 mt-3 p-5 lg:p-0">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-5">
               <input
                 name="name"
                 type="text"
