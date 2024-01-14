@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav
-      className="absolute top-0 left-0 w-full z-30 text-grayLight bg-black bg-opacity-50 flex flex-col md:flex-row justify-between items-center gap-2 px-10 py-2 overflow-hidden">
+      className="absolute top-0 left-0 w-full z-30 text-grayLight bg-black bg-opacity-50 flex flex-col md:flex-row justify-between items-center gap-2 px-10 py-2 lg:py-5 overflow-hidden">
       <div className="text-2xl lg:text-4xl font-[700] tracking-wider uppercase">
         <h1><span className="text-brownLight">The</span>RedMill</h1>
       </div>
