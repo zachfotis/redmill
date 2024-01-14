@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ReactNode } from 'react';
+import EU from '@/components/EU';
+import GoToTop from '@/components/GoToTop';
 
 export const metadata: Metadata = {
   title: 'The Red Mill',
@@ -14,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <body className="bg-grayLight">{ children }</body>
+    <body className="relative bg-grayLight">
+    { children }
+    <EU />
+    <GoToTop />
+    </body>
     </html>
   );
 }

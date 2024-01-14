@@ -26,7 +26,7 @@ export default function GoToTop() {
   return (
     <div
       title="Go to top"
-      className="fixed bottom-0 right-0 bg-accent mb-4 mr-4 rounded-lg hover:bg-brownLight transition-all duration-300 ease-in-out z-50">
+      className="fixed bottom-2 right-0 bg-accent mb-4 mr-4 rounded-lg hover:bg-brownLight transition-all duration-300 ease-in-out z-50">
       <button
         className="bg-gray-800 text-white rounded-full p-2 hover:bg-gray-900 focus:outline-none focus:bg-gray-900"
         onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }

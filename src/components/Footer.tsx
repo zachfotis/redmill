@@ -14,7 +14,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="w-full bg-black bg-opacity-90 flex flex-col items-center justify-start gap-20 p-20">
+    <footer className="w-full bg-black bg-opacity-90 flex flex-col items-center justify-start gap-20 p-20 pb-32">
 
       <section className="w-full flex items-start justify-center gap-20">
         <section className="flex flex-col justify-start items-start gap-1 p-5">

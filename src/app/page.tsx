@@ -7,7 +7,6 @@ import BestCoffee from '@/components/BestCoffee';
 import Menu from '@/components/Menu';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import GoToTop from '@/components/GoToTop';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Menu />
       <Contact />
       <Footer />
-      <GoToTop />
     </main>
   );
 }
