@@ -1,0 +1,23 @@
+.high-contrast {
+  filter: invert(100%);
+  background-color: black;
+}
+
+.negative-contrast {
+  filter: invert(100%);
+  background-color: black;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.high-contrast {
+  background-color: black;
+  color: white;
+}
+
+.light-background {
+  background-color: lightyellow;
+}
+
