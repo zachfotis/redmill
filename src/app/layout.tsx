@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body className="relative bg-grayLight">
-    { children }
+    <main id="maincontent">
+      { children }
+    </main>
     <EU />
     <GoToTop />
     </body>

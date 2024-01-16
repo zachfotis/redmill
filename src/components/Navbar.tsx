@@ -20,11 +20,31 @@ function Navbar() {
       </div>
       <div className="text-sm lg:text-base text-grayLight uppercase font-[400] md:tracking-wider whitespace-nowrap">
         <ul className="flex flex-wrap justify-center">
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'services') }>Οι παροχες μας</li>
-          {/*<li className={ liClasses } onClick={ (e) => handleClick(e, 'shop') }>Το καταστημα μας</li>*/ }
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'process') }>Η διαδικασια</li>
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'menu') }>Τιμοκαταλογος</li>
-          <li className={ liClasses } onClick={ (e) => handleClick(e, 'contact') }>Επικοινωνια</li>
+          <li
+            className={ liClasses }
+            onClick={ (e) => handleClick(e, 'services') }
+            onKeyDown={ (e) => { if (e.key === 'Enter') handleClick(e, 'services'); } }
+            tabIndex={ 0 }>
+            Οι παροχες μας
+          </li>
+          <li
+            className={ liClasses } onClick={ (e) => handleClick(e, 'process') }
+            onKeyDown={ (e) => { if (e.key === 'Enter') handleClick(e, 'process'); } }
+            tabIndex={ 0 }>
+            Η διαδικασια
+          </li>
+          <li
+            className={ liClasses } onClick={ (e) => handleClick(e, 'menu') }
+            onKeyDown={ (e) => { if (e.key === 'Enter') handleClick(e, 'menu'); } }
+            tabIndex={ 0 }>
+            Τιμοκαταλογος
+          </li>
+          <li
+            className={ liClasses } onClick={ (e) => handleClick(e, 'contact') }
+            onKeyDown={ (e) => { if (e.key === 'Enter') handleClick(e, 'contact'); } }
+            tabIndex={ 0 }>
+            Επικοινωνια
+          </li>
         </ul>
       </div>
       <div className="w-full absolute bottom-0 left-0 z-10 h-1 bg-accent" />

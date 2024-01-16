@@ -13,13 +13,13 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState('');
 
   return (
-    <section id="contact" className="relative w-full h-[900px] text-grayLight overflow-hidden">
+    <section id="contact" className="relative w-full h-[900px] text-grayLight overflow-hidden bg-black">
       <div className="w-full absolute -top-1 left-0 z-10 rotate-180">
         <PaperSeparator />
       </div>
       <Parallax
         bgImage={ HeroImage.src }
-        bgImageAlt="hero image"
+        bgImageAlt="Coffee cup wallpaper background"
         bgImageStyle={ {
           height: '1100px',
           objectFit: 'cover',
@@ -45,40 +45,52 @@ export default function Contact() {
             } }
             className="w-full flex flex-col gap-10 mt-3 p-5 lg:p-0">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-5">
-              <input
-                name="name"
-                type="text"
-                placeholder="Ονοματεπώνυμο"
-                className="w-full h-10 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
-                value={ name }
-                onChange={ (event) => setName(event.target.value) }
+              <div className="w-full flex flex-col justify-start items-start gap-2">
+                <label htmlFor="name" className="text-base lg:text-lg font-serif tracking-wider font-[400]">Ονοματεπώνυμο</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ονοματεπώνυμο"
+                  className="w-full h-10 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
+                  value={ name }
+                  onChange={ (event) => setName(event.target.value) }
+                  disabled={ isSubmitted === 'true' }
+                  required
+                />
+              </div>
+              <div className="w-full flex flex-col justify-start items-start gap-2">
+                <label htmlFor="email" className="text-base lg:text-lg font-serif tracking-wider font-[400]">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  className="w-full h-10 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
+                  value={ email }
+                  onChange={ (event) => setEmail(event.target.value) }
+                  disabled={ isSubmitted === 'true' }
+                  required
+                />
+              </div>
+            </div>
+            <div className="w-full flex flex-col justify-start items-start gap-2">
+              <label htmlFor="message" className="text-base lg:text-lg font-serif tracking-wider font-[400]">Μήνυμα</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Μήνυμα"
+                className="w-full h-40 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
+                value={ message }
+                onChange={ (event) => setMessage(event.target.value) }
                 disabled={ isSubmitted === 'true' }
-                required
-              />
-              <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                className="w-full h-10 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
-                value={ email }
-                onChange={ (event) => setEmail(event.target.value) }
-                disabled={ isSubmitted === 'true' }
+                minLength={ 20 }
                 required
               />
             </div>
-            <textarea
-              name="message"
-              placeholder="Μήνυμα"
-              className="w-full h-40 px-3 py-2 text-black bg-white bg-opacity-90 border-2 border-grayLight rounded-md focus:outline-none focus:border-accent disabled:opacity-50 disabled:cursor-not-allowed"
-              value={ message }
-              onChange={ (event) => setMessage(event.target.value) }
-              disabled={ isSubmitted === 'true' }
-              minLength={ 20 }
-              required
-            />
             <button
               type="submit"
-              className="w-full h-10 bg-accent text-grayLight rounded-md mt-5 hover:bg-brownLight hover:text-white transition-all duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full h-10 bg-accent text-black rounded-md mt-5 hover:bg-brownLight hover:text-white transition-all duration-300 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={ isSubmitted === 'true' }
             >
               Αποστολή
