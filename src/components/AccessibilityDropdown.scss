@@ -1,6 +1,12 @@
 .high-contrast {
-  filter: invert(100%);
-  background-color: black;
+  background-color: black !important;
+  color: white !important;
+
+  & * {
+    background-color: black !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
 }
 
 .negative-contrast {

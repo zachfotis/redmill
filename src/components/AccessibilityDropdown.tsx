@@ -121,11 +121,19 @@ export default function AccessibilityDropdown() {
   };
   const highContrast = (enable: boolean) => {
     if (enable) {
-      document.body.style.backgroundColor = 'black';
-      document.body.style.color = 'white';
+      const elements = document.querySelectorAll('body *');
+      elements.forEach(el => {
+        if (el instanceof HTMLElement) {
+          el.classList.add('high-contrast');
+        }
+      });
     } else {
-      document.body.style.backgroundColor = '';
-      document.body.style.color = '';
+      const elements = document.querySelectorAll('body *');
+      elements.forEach(el => {
+        if (el instanceof HTMLElement) {
+          el.classList.remove('high-contrast');
+        }
+      });
     }
   };
   const negativeContrast = (enable: boolean) => {
@@ -180,10 +188,14 @@ export default function AccessibilityDropdown() {
       style={ { background: 'transparent' } }
       className="relative z-50 ml-2">
       <div
+        id="options-menu"
         role="button"
         tabIndex={ 0 }
         onClick={ toggleDropdown }
         className="rounded-md bg-blue-500 hover:bg-blue-600 border border-gray-300 shadow-sm px-4 py-2"
+        aria-haspopup="true"
+        aria-expanded={ isOpen }
+        aria-controls="options-menu"
       >
         <FaUniversalAccess className="text-3xl text-white" />
       </div>
