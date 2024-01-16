@@ -1,7 +1,12 @@
 'use client';
 import { useEffect, useState } from 'react';
 import './AccessibilityDropdown.scss';
-import { FaUniversalAccess } from 'react-icons/fa';
+import { FaRegEye, FaRegLightbulb, FaUniversalAccess } from 'react-icons/fa';
+import { PiMagnifyingGlassMinusBold, PiMagnifyingGlassPlusBold } from 'react-icons/pi';
+import { IoColorFillOutline, IoContrastSharp } from 'react-icons/io5';
+import { MdOutlineLink } from 'react-icons/md';
+import { FaFont } from 'react-icons/fa6';
+import { BiReset } from 'react-icons/bi';
 
 export default function AccessibilityDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -187,12 +192,16 @@ export default function AccessibilityDropdown() {
          z-50 mt-1 w-fit min-w-[150px] rounded-md shadow-lg bg-white" style={ { backgroundColor: 'white', color: 'black' } }>
           <div className="flex flex-col justify-start items-center" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <button onClick={ increaseText } aria-label="Increase text size"
-              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100"
-              role="menuitem" tabIndex={ 0 }>Μεγέθυνση κειμένου
+              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 flex justify-start items-center gap-3"
+              role="menuitem" tabIndex={ 0 }>
+              <PiMagnifyingGlassPlusBold className="text-lg" />
+              Μεγέθυνση κειμένου
             </button>
             <button onClick={ decreaseText } aria-label="Decrease text size"
-              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100"
-              role="menuitem" tabIndex={ 0 }>Σμίκρυνση κειμένου
+              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 flex justify-start items-center gap-3"
+              role="menuitem" tabIndex={ 0 }>
+              <PiMagnifyingGlassMinusBold className="text-lg" />
+              Σμίκρυνση κειμένου
             </button>
             <button
               onClick={ () => {
@@ -200,8 +209,11 @@ export default function AccessibilityDropdown() {
                 grayscale(!activeFeature.includes('grayscale'));
               } }
               aria-label="Apply grayscale filter"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('grayscale') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Κλίμακα του γκρι
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3
+               ${ activeFeature.includes('grayscale') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <IoColorFillOutline className="text-lg" />
+              Κλίμακα του γκρι
             </button>
             <button
               onClick={ () => {
@@ -209,8 +221,11 @@ export default function AccessibilityDropdown() {
                 highContrast(!activeFeature.includes('highContrast'));
               } }
               aria-label="Apply high contrast"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('highContrast') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Υψηλή αντίθεση
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3 
+              ${ activeFeature.includes('highContrast') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <IoContrastSharp className="text-lg" />
+              Υψηλή αντίθεση
             </button>
             <button
               onClick={ () => {
@@ -218,8 +233,11 @@ export default function AccessibilityDropdown() {
                 negativeContrast(!activeFeature.includes('negativeContrast'));
               } }
               aria-label="Apply negative contrast"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('negativeContrast') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Αρνητική αντίθεση
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3 
+              ${ activeFeature.includes('negativeContrast') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <FaRegEye className="text-lg" />
+              Αρνητική αντίθεση
             </button>
             <button
               onClick={ () => {
@@ -227,8 +245,11 @@ export default function AccessibilityDropdown() {
                 lightBackground(!activeFeature.includes('lightBackground'));
               } }
               aria-label="Apply light background"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('lightBackground') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Φωτεινό φόντο
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3 
+              ${ activeFeature.includes('lightBackground') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <FaRegLightbulb className="text-lg" />
+              Φωτεινό φόντο
             </button>
             <button
               onClick={ () => {
@@ -236,8 +257,11 @@ export default function AccessibilityDropdown() {
                 linksUnderline(!activeFeature.includes('linksUnderline'));
               } }
               aria-label="Underline links"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('linksUnderline') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Υπογράμμιση συνδέσμων
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3 
+              ${ activeFeature.includes('linksUnderline') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <MdOutlineLink className="text-lg" />
+              Υπογράμμιση συνδέσμων
             </button>
             <button
               onClick={ () => {
@@ -245,14 +269,19 @@ export default function AccessibilityDropdown() {
                 readableFont(!activeFeature.includes('readableFont'));
               } }
               aria-label="Apply readable font"
-              className={ `w-full text-left px-4 py-2 text-sm ${ activeFeature.includes('readableFont') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
-              role="menuitem" tabIndex={ 0 }>Ευανάγνωστη γραμματοσειρά
+              className={ `w-full text-left px-4 py-2 text-sm flex justify-start items-center gap-3 
+              ${ activeFeature.includes('readableFont') ? 'bg-stone-200' : 'text-gray-700 hover:bg-stone-100' }` }
+              role="menuitem" tabIndex={ 0 }>
+              <FaFont className="text-lg" />
+              Ευανάγνωστη γραμματοσειρά
             </button>
             <button
               onClick={ reset }
-              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100"
+              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 flex justify-start items-center gap-3"
               role="menuitem" tabIndex={ 0 }
-              aria-label="Reset all accessibility features">Επαναφορά ρυθμίσεων
+              aria-label="Reset all accessibility features">
+              <BiReset className="text-lg" />
+              Επαναφορά ρυθμίσεων
             </button>
           </div>
         </div>
