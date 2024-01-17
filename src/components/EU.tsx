@@ -38,12 +38,12 @@ export default function EU() {
       <div className="flex flex-col justify-center items-center gap-1 md:gap-3">
         <div className="w-full flex justify-center md:justify-start items-center gap-2">
           <FaLink className="text-lg text-brown" />
-          <Link href="http://www.agrotikianaptixi.gr/" target="_blank" rel="noopener noreferrer" className="text-xs text-brown font-[500]">Προγράμματος Αγροτικής Ανάπτυξης</Link>
+          <Link href="http://www.agrotikianaptixi.gr/" target="_blank" rel="noopener noreferrer" className="text-xs text-brown font-[500]">Πρόγραμμα Αγροτικής Ανάπτυξης</Link>
         </div>
         <div className="w-full flex justify-center md:justify-start items-center gap-2">
           <FaLink className="text-lg text-brown" />
           <Link href="https://ec.europa.eu/agriculture/index_el" target="_blank" rel="noopener noreferrer" className="text-xs text-brown font-[500]">
-            Διεύθυνσης Γεωργίας και Αγροτικής Ανάπτυξης
+            Διεύθυνση Γεωργίας και Αγροτικής Ανάπτυξης
           </Link>
         </div>
       </div>
