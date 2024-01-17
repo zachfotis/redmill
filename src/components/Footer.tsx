@@ -37,7 +37,7 @@ export default function Footer() {
               <p className="font-[400] text-accent">07:00 π.μ. - 03:00 μ.μ.</p>
               <p className="font-[400] text-accent">07:00 π.μ. - 03:00 μ.μ.</p>
               <p className="font-[400] text-accent">07:00 π.μ. - 03:00 μ.μ.</p>
-              <p className="font-[400] text-accent">08:00 π.μ. - 03:00 μ.μ.</p>
+              <p className="font-[400] text-accent">Κλειστά</p>
             </div>
           </div>
         </section>
