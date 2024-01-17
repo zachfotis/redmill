@@ -15,7 +15,7 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="el">
     <body className="relative bg-grayLight">
     <main id="maincontent">
       { children }

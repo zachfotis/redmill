@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen grid grid-cols-1 overflow-hidden">
+    <section className="min-h-screen grid grid-cols-1 overflow-hidden">
       <Navbar />
       <Hero />
       <Services />
@@ -20,6 +20,6 @@ export default function Home() {
       <Menu />
       <Contact />
       <Footer />
-    </main>
+    </section>
   );
 }
