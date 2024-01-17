@@ -17,17 +17,17 @@ function Services() {
         <div className="grid grid-cols-[1fr_100px] gap-10">
           <div className="w-full flex flex-col justify-start items-end gap-2">
             <h1 className="text-lg lg:text-xl text-right font-[600] uppercase">Take away</h1>
-            <p className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Παραλάβετε τον καφέ σας απο το κατάστημα μας</p>
+            <h2 className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Παραλάβετε τον καφέ σας απο το κατάστημα μας</h2>
           </div>
           <CiCoffeeCup className="text-6xl text-accent" aria-label="coffee cup icon" />
           <div className="w-full flex flex-col justify-start items-end gap-2">
             <h1 className="text-lg lg:text-xl text-right font-[600] uppercase">Ροφηματα</h1>
-            <p className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Επιλέξτε ή δημιουργήστε το καφέ σας όπως εσείς τον θέλετε</p>
+            <h2 className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Επιλέξτε ή δημιουργήστε το καφέ σας όπως εσείς τον θέλετε</h2>
           </div>
           <IoCafeOutline className="text-6xl text-accent" aria-label="cafe icon" />
           <div className="w-full flex flex-col justify-start items-end gap-2">
             <h1 className="text-lg lg:text-xl text-right font-[600] uppercase">Φιλικο περιβαλλον</h1>
-            <p className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Απολαύστε τον καφέ σας σε ενα φιλικό περιβάλλον</p>
+            <h2 className="text-lg lg:text-xl text-right font-serif tracking-wider font-[400]">Απολαύστε τον καφέ σας σε ενα φιλικό περιβάλλον</h2>
           </div>
           <IoMdHappy className="text-6xl text-accent" aria-label="happy face icon" />
         </div>
@@ -42,17 +42,17 @@ function Services() {
           <IoStorefrontOutline className="text-6xl text-accent" aria-label="storefront icon" />
           <div className="w-full flex flex-col justify-start items-start gap-2">
             <h1 className="text-lg lg:text-xl font-[600] uppercase">Καταστημα</h1>
-            <p className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Απολαύστε τον καφέ σας στο κατάστημά μας</p>
+            <h2 className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Απολαύστε τον καφέ σας στο κατάστημά μας</h2>
           </div>
           <BiSolidCoffeeBean className="text-6xl text-accent" aria-label="coffee bean icon" />
           <div className="w-full flex flex-col justify-start items-start gap-2">
             <h1 className="text-lg lg:text-xl font-[600] uppercase">Προϊοντα Καφεκοπτείου</h1>
-            <p className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Επιλέξτε την ποικιλία καφέ που σας αρέσει</p>
+            <h2 className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Επιλέξτε την ποικιλία καφέ που σας αρέσει</h2>
           </div>
           <FaAccessibleIcon className="text-6xl text-accent" aria-label="accessibility icon" />
           <div className="w-full flex flex-col justify-start items-start gap-2">
             <h1 className="text-lg lg:text-xl font-[600] uppercase">Προσβασιμοτητα</h1>
-            <p className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Το κατάστημά μας είναι προσβάσιμο σε άτομα με ειδικές ανάγκες</p>
+            <h2 className="text-lg lg:text-xl text-left font-serif tracking-wider font-[400]">Το κατάστημά μας είναι προσβάσιμο σε άτομα με ειδικές ανάγκες</h2>
           </div>
         </div>
       </div>
