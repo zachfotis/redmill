@@ -1,6 +1,5 @@
 'use client';
 
-import HeroImage from '@/assets/contact.png';
 import PaperSeparator from '@/components/PaperSeparator';
 import { submitForm } from '@/serverActions/ContactActions';
 import { useState } from 'react';
@@ -18,7 +17,7 @@ export default function Contact() {
         <PaperSeparator />
       </div>
       <Parallax
-        bgImage={HeroImage.src}
+        bgImage="/images/contact/IMG_2952.jpg"
         bgImageAlt="Coffee cup wallpaper background"
         bgImageStyle={{
           height: '1100px',
@@ -29,8 +28,12 @@ export default function Contact() {
       />
       <div className="absolute top-0 left-0 z-20 w-full h-[900px] flex justify-center items-stretch gap-10">
         <div className="flex flex-col justify-center items-start gap-5">
-          <h1 className="w-full lg:w-auto text-lg lg:text-xl text-center lg:text-left text-accent font-serif italic tracking-wider font-[500]">Φόρμα Επικοινωνίας</h1>
-          <h1 className="w-full lg:w-auto text-3xl lg:text-5xl text-center lg:text-left font-[500] tracking-wider uppercase">Επικοινωνηστε μαζι μας</h1>
+          <h1 className="w-full lg:w-auto text-lg lg:text-xl text-center lg:text-left text-accent font-serif italic tracking-wider font-[500]">
+            Φόρμα Επικοινωνίας
+          </h1>
+          <h1 className="w-full lg:w-auto text-3xl lg:text-5xl text-center lg:text-left font-[500] tracking-wider uppercase">
+            Επικοινωνηστε μαζι μας
+          </h1>
           <div className="w-full h-[2px] mt-2 bg-accent opacity-50" />
           <form
             action={async (formData: FormData) => {
@@ -107,18 +110,24 @@ export default function Contact() {
 
           {isSubmitted === 'true' ? (
             <div className="w-full flex justify-center items-center gap-5">
-              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">Το μήνυμα σας στάλθηκε επιτυχώς!</h1>
+              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">
+                Το μήνυμα σας στάλθηκε επιτυχώς!
+              </h1>
             </div>
           ) : isSubmitted === 'false' ? (
             <div className="w-full flex flex-col justify-center items-center gap-5">
-              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">Σφάλμα κατά την αποστολή του μηνύματος!</h1>
-              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">Παρακαλώ προσπαθήστε ξανά!</h1>
+              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">
+                Σφάλμα κατά την αποστολή του μηνύματος!
+              </h1>
+              <h1 className="text-xl text-accent font-serif italic tracking-wider font-[500]">
+                Παρακαλώ προσπαθήστε ξανά!
+              </h1>
             </div>
           ) : null}
         </div>
       </div>
       {/* Black overlay */}
-      <div className="w-full h-[900px] absolute top-0 left-0 z-0 bg-black opacity-50" />
+      <div className="w-full h-[900px] absolute top-0 left-0 z-0 bg-black opacity-70" />
       <div className="w-full absolute bottom-0 left-0 z-10 h-2 bg-brownLight" />
     </section>
   );

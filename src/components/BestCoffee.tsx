@@ -1,9 +1,8 @@
 'use client';
 
-import { Parallax } from 'react-parallax';
-import HeroImage from '@/assets/best-coffee.jpg';
-import Image from 'next/image';
 import PaperSeparator from '@/components/PaperSeparator';
+import Image from 'next/image';
+import { Parallax } from 'react-parallax';
 
 function BestCoffee() {
   return (
@@ -12,7 +11,7 @@ function BestCoffee() {
         <PaperSeparator />
       </div>
       <Parallax
-        bgImage={ HeroImage.src }
+        bgImage="/images/best-coffee/IMG_2908.jpg"
         bgImageAlt="A picture of the best coffee"
         bgImageStyle={ { height: '1000px', objectFit: 'cover' } }
         strength={ 700 }
@@ -31,7 +30,7 @@ function BestCoffee() {
         </div>
       </div>
       {/* Black overlay */ }
-      <div className="w-full h-[800px] absolute top-0 left-0 z-0 bg-black opacity-50" />
+      <div className="w-full h-[800px] absolute top-0 left-0 z-0 bg-black opacity-70" />
       <div className="w-full absolute -bottom-1 left-0 z-10">
         <PaperSeparator />
       </div>
