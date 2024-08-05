@@ -1,12 +1,12 @@
 'use client';
 import { useEffect, useState } from 'react';
-import './AccessibilityDropdown.scss';
+import { BiReset } from 'react-icons/bi';
 import { FaRegEye, FaRegLightbulb, FaUniversalAccess } from 'react-icons/fa';
-import { PiMagnifyingGlassMinusBold, PiMagnifyingGlassPlusBold } from 'react-icons/pi';
+import { FaFont } from 'react-icons/fa6';
 import { IoColorFillOutline, IoContrastSharp } from 'react-icons/io5';
 import { MdOutlineLink } from 'react-icons/md';
-import { FaFont } from 'react-icons/fa6';
-import { BiReset } from 'react-icons/bi';
+import { PiMagnifyingGlassMinusBold, PiMagnifyingGlassPlusBold } from 'react-icons/pi';
+import './AccessibilityDropdown.scss';
 
 export default function AccessibilityDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,8 +74,6 @@ export default function AccessibilityDropdown() {
       setActiveFeature(currentFeatures);
     }
   };
-
-  console.log(activeFeature);
 
   const changeFontSize = (element: HTMLElement, change: number) => {
     const style = window.getComputedStyle(element);
