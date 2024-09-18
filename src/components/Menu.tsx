@@ -1,47 +1,48 @@
 'use client';
 
 import MenuItem from '@/components/MenuItem';
-import { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 
 function Menu() {
   const [activeMenu, setActiveMenu] = useState('coffee');
 
   const drinkMenuItems = [
     { itemName: 'Ελληνικός μονός', itemPrice: '1,50' },
-    { itemName: 'Espresso μονό', itemPrice: '1,50' },
+    { itemName: 'Espresso μονό', itemPrice: '1,80' },
     { itemName: 'Ελληνικός διπλός', itemPrice: '2,00' },
-    { itemName: 'Espresso διπλό', itemPrice: '1,70' },
-    { itemName: 'Espresso Lungo μονό', itemPrice: '1,50' },
-    { itemName: 'Cappuccino (Freddo) μονό', itemPrice: '1,90' },
-    { itemName: 'Espresso Lungo διπλό', itemPrice: '1,70' },
-    { itemName: 'Cappuccino (Freddo) διπλό', itemPrice: '2,10' },
+    { itemName: 'Espresso διπλό', itemPrice: '1,80' },
+    { itemName: 'Espresso Lungo μονό', itemPrice: '1,80' },
+    { itemName: 'Cappuccino (Freddo) μονό', itemPrice: '2,20' },
+    { itemName: 'Espresso Lungo διπλό', itemPrice: '1,80' },
+    { itemName: 'Cappuccino (Freddo) διπλό', itemPrice: '2,20' },
     { itemName: 'Latte', itemPrice: '2,20' },
-    { itemName: 'Americano μονό', itemPrice: '1,50' },
-    { itemName: 'Σοκολάτα', itemPrice: '2,10' },
-    { itemName: 'Americano διπλό', itemPrice: '1,70' },
+    { itemName: 'Americano μονό', itemPrice: '1,80' },
+    { itemName: 'Σοκολάτα', itemPrice: '2,20' },
+    { itemName: 'Americano διπλό', itemPrice: '1,80' },
     { itemName: 'Σοκολάτα Γεύση', itemPrice: '2,40' },
-    { itemName: 'Φίλτρου κλασσικός', itemPrice: '1,70' },
-    { itemName: 'Τσάι (Κλασσικό-Γεύση)', itemPrice: '1,70' },
+    { itemName: 'Φίλτρου κλασσικός', itemPrice: '1,80' },
+    { itemName: 'Τσάι (Κλασσικό-Γεύση)', itemPrice: '1,80' },
     { itemName: 'Φίλτρου Γεύση', itemPrice: '2,20' },
-    { itemName: 'Nescafe-frappe', itemPrice: '1,70' },
+    { itemName: 'Nescafe-frappe', itemPrice: '1,80' },
     { itemName: 'Φίλτρου decaf', itemPrice: '2,20' },
+    { itemName: 'Nescafe-frappe decaf', itemPrice: '1,90' },
     { itemName: 'Σαλέπι', itemPrice: '2,40' },
   ];
 
   const coffeeMenuItems = [
-    { itemName: 'Ελληνικός Ξανθός', itemPrice: '19,00' },
-    { itemName: 'Espresso Κόκκινος Μύλος', itemPrice: '25,00' },
-    { itemName: 'Ελληνικός Σκούρος', itemPrice: '19,50' },
+    { itemName: 'Ελληνικός Ξανθός', itemPrice: '20,00' },
+    { itemName: 'Espresso Κόκκινος Μύλος', itemPrice: '26,00' },
+    { itemName: 'Ελληνικός Σκούρος', itemPrice: '20,00' },
     { itemName: 'Espresso Βραζιλίας (Brazilian)', itemPrice: '25,00' },
-    { itemName: 'Ελληνικός Χωρίς Καφεΐνη', itemPrice: '23,00' },
+    { itemName: 'Ελληνικός Χωρίς Καφεΐνη', itemPrice: '24,00' },
     { itemName: 'Espresso Κολομβίας (Colombian)', itemPrice: '25,00' },
     { itemName: 'Φίλτρου', itemPrice: '25,00' },
     { itemName: 'Espresso Γουατεμάλας (Guatemala)', itemPrice: '28,00' },
-    { itemName: 'Φίλτρου Κλασσικός', itemPrice: '23,00' },
+    { itemName: 'Φίλτρου Κλασσικός', itemPrice: '24,00' },
     { itemName: 'Espresso Αιθιοπίας (Ethiopian)', itemPrice: '25,00' },
     { itemName: 'Φίλτρου Φουντούκι', itemPrice: '28,00' },
-    { itemName: 'Espresso Domenico', itemPrice: '24,00' },
+    { itemName: 'Espresso Domenico', itemPrice: '25,00' },
     { itemName: 'Φίλτρου Βανίλια', itemPrice: '28,00' },
     { itemName: 'Espresso Arabica', itemPrice: '25,00' },
     { itemName: 'Φίλτρου Μπισκότο', itemPrice: '28,00' },
