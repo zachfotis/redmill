@@ -32,13 +32,13 @@ export default function Footer() {
               <p className="font-[400] text-grayLight">Κυριακή</p>
             </div>
             <div className="flex flex-col justify-start items-end text-base lg:text-lg gap-3">
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
-              <p className="font-[400] text-accent">07:00 π.μ. - 15:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">07:00 π.μ. - 14:00 μ.μ.</p>
+              <p className="font-[400] text-accent">Κλειστά</p>
             </div>
           </div>
         </section>
