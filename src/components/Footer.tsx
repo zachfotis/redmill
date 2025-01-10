@@ -59,7 +59,7 @@ export default function Footer() {
                 Νίκης 62, Νέα Πέραμος
               </Link>
               <Link href="tel:00306908922561" className="font-[400] text-accent">
-                +30 6908922561
+                +30 2594 401022
               </Link>
               <Link href="mailto:Kokkinosmylosroasters@gmail.com" className="font-[400] text-accent">
                 Kokkinosmylosroasters@gmail.com
