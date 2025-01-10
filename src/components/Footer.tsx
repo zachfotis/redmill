@@ -58,7 +58,7 @@ export default function Footer() {
               <Link href="https://maps.app.goo.gl/jht4LQ8MG67FzwfW9" className="font-[400] text-accent">
                 Νίκης 62, Νέα Πέραμος
               </Link>
-              <Link href="tel:00306908922561" className="font-[400] text-accent">
+              <Link href="tel:00302594401022" className="font-[400] text-accent">
                 +30 2594 401022
               </Link>
               <Link href="mailto:Kokkinosmylosroasters@gmail.com" className="font-[400] text-accent">
