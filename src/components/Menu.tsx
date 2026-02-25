@@ -8,29 +8,30 @@ function Menu() {
   const [activeMenu, setActiveMenu] = useState('coffee');
 
   const drinkMenuItemsCol1 = [
-    { itemName: 'Ελληνικός μονός', itemPrice: '1,60' },
-    { itemName: 'Ελληνικός διπλός', itemPrice: '2,00' },
-    { itemName: 'Espresso Lungo μονό', itemPrice: '1,90' },
-    { itemName: 'Espresso Lungo διπλό', itemPrice: '1,90' },
-    { itemName: 'Latte', itemPrice: '2,50' },
-    { itemName: 'Σοκολάτα', itemPrice: '2,50' },
-    { itemName: 'Σοκολάτα Γεύση', itemPrice: '2,50' },
-    { itemName: 'Τσάι (Κλασσικό-Γεύση)', itemPrice: '2,00' },
-    { itemName: 'Nescafe-frappe', itemPrice: '2,00' },
-    { itemName: 'Nescafe-frappe decaf', itemPrice: '2,00' },
+    { itemName: 'Ελληνικός μονός', itemPrice: '1,80' },
+    { itemName: 'Ελληνικός διπλός', itemPrice: '2,20' },
+    { itemName: 'Espresso Lungo μονό', itemPrice: '2,00' },
+    { itemName: 'Espresso Lungo διπλό', itemPrice: '2,00' },
+    { itemName: 'Latte', itemPrice: '2,80' },
+    { itemName: 'Σοκολάτα', itemPrice: '2,80' },
+    { itemName: 'Σοκολάτα Γεύση', itemPrice: '3,50' },
+    { itemName: 'Τσάι (Κλασσικό-Γεύση)', itemPrice: '2,20' },
+    { itemName: 'Nescafe-frappe', itemPrice: '2,20' },
+    { itemName: 'Nescafe-frappe decaf', itemPrice: '2,40' },
   ];
 
   const drinkMenuItemsCol2 = [
-    { itemName: 'Espresso μονό', itemPrice: '1,90' },
-    { itemName: 'Espresso διπλό', itemPrice: '1,90' },
-    { itemName: 'Cappuccino (Freddo) μονό', itemPrice: '2,20' },
-    { itemName: 'Cappuccino (Freddo) διπλό', itemPrice: '2,40' },
-    { itemName: 'Americano μονό', itemPrice: '1,90' },
-    { itemName: 'Americano διπλό', itemPrice: '1,90' },
-    { itemName: 'Φίλτρου κλασσικός', itemPrice: '1,90' },
-    { itemName: 'Φίλτρου Γεύση', itemPrice: '2,20' },
-    { itemName: 'Φίλτρου decaf', itemPrice: '2,20' },
-    { itemName: 'Σαλέπι', itemPrice: '2,40' },
+    { itemName: 'Freddo Espresso διπλό', itemPrice: '2,00', isPromoted: true },
+    { itemName: 'Espresso μονό', itemPrice: '2,00' },
+    { itemName: 'Espresso διπλό', itemPrice: '2,20' },
+    { itemName: 'Cappuccino (Freddo) μονό', itemPrice: '2,60' },
+    { itemName: 'Cappuccino (Freddo) διπλό', itemPrice: '2,60' },
+    { itemName: 'Americano μονό', itemPrice: '2,20' },
+    { itemName: 'Americano διπλό', itemPrice: '2,20' },
+    { itemName: 'Φίλτρου κλασσικός', itemPrice: '2,20' },
+    { itemName: 'Φίλτρου Γεύση', itemPrice: '2,50' },
+    { itemName: 'Φίλτρου decaf', itemPrice: '2,40' },
+    { itemName: 'Σαλέπι', itemPrice: '3,00' },
   ];
 
   const coffeeMenuItemsCol1 = [
@@ -103,7 +104,7 @@ function Menu() {
           </div>
           <div className="w-full flex flex-col gap-7">
             {drinkMenuItemsCol2.map((item, index) => (
-              <MenuItem key={index} itemName={item.itemName} itemPrice={item.itemPrice} />
+              <MenuItem key={index} itemName={item.itemName} itemPrice={item.itemPrice} isPromoted={item?.isPromoted} />
             ))}
           </div>
         </div>

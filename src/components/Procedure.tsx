@@ -72,7 +72,7 @@ function Procedure() {
         </div>
         <div className="flex-1 flex flex-col justify-start items-center gap-2 lg:gap-5">
           <Image
-            src="/images/procedure/IMG_2867.jpg"
+            src="/images/procedure/step4.jpg"
             alt="Enjoying a cup of coffee"
             width={300}
             height={300}
